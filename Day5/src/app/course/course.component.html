@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <table border="1" *ngIf="cName">
+            <thead>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of Courses ">
+                    <td *ngIf="c.courseName==cName">{{c.courseId}}</td>
+                    <td *ngIf="c.courseName==cName">{{c.courseName}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+            

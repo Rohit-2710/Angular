@@ -1,0 +1,27 @@
+<!-- <div>Todays date is {{today}} </div>
+<div>
+  <ol >
+    <li *ngFor="let bo of books"> The book with {{bo.id}} is named as {{bo.name}} </li>
+  </ol></div>
+<div>
+  <app-parent-to-child [myinput]="myInputMessage" (myOutput)="GetOutput($event)"></app-parent-to-child> -->
+<!-- <div class="container">
+  <div class="row">
+    <h2 style="text-align: center;"> Course details</h2>
+    Select a Course to get details.<br>
+    <select #course (change)="name = course.value">
+            <option value="Node JS">Node JS</option>
+            <option value="Typescript">Typescript</option>
+            <option value="Angular">Angular</option>
+            <option value="React JS">React JS</option>
+      </select>
+      <app-course [cName]="name"></app-course>
+</div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <app-registration (onRegister)="courseReg($event)"></app-registration><br><br>
+    ,<div *ngIf="message">{{message}}</div>
+  </div>
+</div>
