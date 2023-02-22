@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { book } from '../../../../Day5/src/app/book';
 
 @Component({
   selector: 'app-task2',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./task2.component.css']
 })
 export class Task2Component {
+  b=new books();
 
+}
+export class books{
+  name:string='';
 }
