@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Day4';
   show:Boolean=false
+  name:string="";
 }
