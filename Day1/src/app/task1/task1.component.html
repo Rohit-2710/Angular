@@ -1,0 +1,13 @@
+<div>
+    Id: <input type="text" [(ngModel) ]  ="login.id"><br /><br />
+    Password:<input type="password" [(ngModel) ] ="login.pwd"><br /><br />
+    </div>
+    
+    
+    
+    <h2> login details : {{ login.id }}  {{ login.pwd }}</h2>
+    
+    <p (click)="validate()">Check login details</p>
+    <div> {{ result }} </div>
+    
+    <br/>
