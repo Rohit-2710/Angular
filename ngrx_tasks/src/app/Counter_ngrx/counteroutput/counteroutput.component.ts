@@ -6,7 +6,7 @@ import {Store} from "@ngrx/store"
   styleUrls: ['./counteroutput.component.css']
 })
 export class CounteroutputComponent {
-  counter:number;
+  counter:any;
   constructor(private store:Store<{counter : {counter:number}}>){}
   ngOninit(): void{
     this.store.select('counter').subscribe(data=>{
